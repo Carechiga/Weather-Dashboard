@@ -1,0 +1,15 @@
+.custom-center {
+    text-align: center;
+    padding: 5px;
+   }
+.custom-p{
+    font-weight: bolder;
+}
+.custom-container {
+    text-align: center;
+    padding: 25px;
+    justify-content: center;
+    column-gap: 100px;
+    align-content: center;
+}
+
