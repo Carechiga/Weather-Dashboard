@@ -20,12 +20,12 @@ crossorigin="anonymous">
             <h1>Weather API Demo</h1>
     </header>
 
-    <div class="input-group container-md">
+    <form id="city-select" class="input-group container-md">
     
         <span class="input-group-text">City, State, Country</span>
-        <input type="text" aria-label="City" class="form-control" placeholder="Enter City">
+        <input id="city-name" type="text" aria-label="City" class="form-control" placeholder="Enter City">
         <!-- this select elemnt contains all the values for the US states -->
-        <select class="form-select">
+        <select id="state-select" class="form-select">
             <option selected value=""> Select State</option>
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
@@ -61,7 +61,7 @@ crossorigin="anonymous">
             <option value="NY">New York</option>
             <option value="NC">North Carolina</option>
             <option value="ND">North Dakota</option>
-            <option value="Oh">Ohio</option>
+            <option value="OH">Ohio</option>
             <option value="OK">Oklahoma</option>
             <option value="OR">Oregon</option>
             <option value="PA">Pennsylvania</option>
@@ -80,7 +80,7 @@ crossorigin="anonymous">
             
         </select>
         <!-- this select elemnt contains all the values for the ISO country codes -->
-        <select class="form-select" aria-label="Default select example">
+        <select id="country-code" class="form-select" aria-label="Default select example">
             <option value="AF">Afghanistan</option>
             <option value="AX">�land Islands</option>
             <option value="AL">Albania</option>
@@ -331,45 +331,19 @@ crossorigin="anonymous">
             <option value="ZM">Zambia</option>
             <option value="ZW">Zimbabwe</option>
           </select>
-        <button type="button" class="btn btn-primary btn-sm">Get Weather!</button>
-        
-    </div>
+        <button id="get-weather" type="button" class="btn btn-primary btn-sm">Get Weather!</button>
+    </form>
+    <p class="custom-center">- or - </p>
+    <form id="lat-lon" class="input-group container-md">
+        <span class="input-group-text">Latitude and longitude</span>
+        <input id="lat" type="text" aria-label="lat" class="form-control" placeholder="Enter Latitude">
+        <input id="lon" type="text" aria-label="lon" class="form-control" placeholder="Enter longitude">
+        <button id="get-weather-latlon" type="button" class="btn btn-primary btn-sm">Get Weather!</button>        
+    </form>
 </div>
-<div class="container-fluid row custom-container">
-    <div class="card customCard" style="width: 32rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Today's forecast</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
-        </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
-      </div>
-      <div class="card customCard" style="width: 32rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Week's forecast at a glance</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
-        </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
-      </div>
+<div id="weeklyForecast" class="custom-container row align-items-start">
+  
 </div>
-
 
 <script src="./assets/js/script.js"></script>
 </body>
