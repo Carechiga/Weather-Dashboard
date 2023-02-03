@@ -11,7 +11,7 @@
     justify-content: center;
     column-gap: 2px;
     align-content: center;
-}
+    }
 
 .custom-visible {
     display: Auto;
@@ -19,4 +19,9 @@
 
 .custom-hidden{
     display: none;
+}
+
+.custom-width {
+    width: auto;
+    justify-content: center;
 }

@@ -335,8 +335,9 @@ crossorigin="anonymous">
     </form>
 
 </div>
-<div id="currentVisibility" class="custom-hidden">
-  <div id="currentWeather" class="custom-container row align-items-start">
+<!-- this div starts hidden and stores the data for the current times weather -->
+<div id="currentVisibility" class="custom-hidden custom-container custom-width">
+  <div id="currentWeather" class="custom-container row">
     <h2 class=" custom-center">Current Weather</h2>
     <div class="container-fluid custom container col">
       <div class="card customCard text-primary-emphasis bg-primary-subtle border border-primary-subtle">
@@ -355,84 +356,91 @@ crossorigin="anonymous">
     </div>
   </div> 
 </div>
-<div id="weeklyVisibility" class="custom-visible">
+
+<!-- this div starts hidden and stores data for the 5 day forecast -->
+<div id="weeklyVisibility" class="custom-hidden">
   <div id="weeklyForecast" class="custom-container row align-items-start">
       <h3 class=" custom-center">Weekly Forecast</h3>
       <div class="container-fluid custom container col">
         <div class="card customCard text-primary-emphasis bg-primary-subtle border border-primary-subtle">
           <div class="card-body">
-            <img id="currentWeatherIcon">
-            <h3 class="card-title">City Name + Date</h3>
-            <h4 class="card-text">Current Temperature</h4>
+            <img class="weeklyWeatherIcon" src="">
+            <h3 class="card-title weeklyCardTitle">City Name + Date</h3>
+            <h4 class="card-text weeklyCardText">Current Temperature</h4>
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">Feels like</li>
-            <li class="list-group-item">Humidty</li>
-            <li class="list-group-item">Wind</li>
+            <li class="list-group-item weeklyFeel">Feels like</li>
+            <li class="list-group-item weeklyHumidity">Humidty</li>
+            <li class="list-group-item weeklyWind">Wind</li>
           </ul>
         </div>
       </div>
       <div class="container-fluid custom container col">
         <div class="card customCard text-primary-emphasis bg-primary-subtle border border-primary-subtle">
           <div class="card-body">
-            <img id="currentWeatherIcon">
-            <h3 class="card-title">City Name + Date</h3>
-            <h4 class="card-text">Current Temperature</h4>
+            <img class="weeklyWeatherIcon" src="">
+            <h3 class="card-title weeklyCardTitle">City Name + Date</h3>
+            <h4 class="card-text weeklyCardText">Current Temperature</h4>
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">Feels like</li>
-            <li class="list-group-item">Humidty</li>
-            <li class="list-group-item">Wind</li>
+            <li class="list-group-item weeklyFeel">Feels like</li>
+            <li class="list-group-item weeklyHumidity">Humidty</li>
+            <li class="list-group-item weeklyWind">Wind</li>
           </ul>
         </div>
-      </div>  
+      </div>
       <div class="container-fluid custom container col">
         <div class="card customCard text-primary-emphasis bg-primary-subtle border border-primary-subtle">
           <div class="card-body">
-            <img id="currentWeatherIcon">
-            <h3 class="card-title">City Name + Date</h3>
-            <h4 class="card-text">Current Temperature</h4>
+            <img class="weeklyWeatherIcon" src="">
+            <h3 class="card-title weeklyCardTitle">City Name + Date</h3>
+            <h4 class="card-text weeklyCardText">Current Temperature</h4>
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">Feels like</li>
-            <li class="list-group-item">Humidty</li>
-            <li class="list-group-item">Wind</li>
+            <li class="list-group-item weeklyFeel">Feels like</li>
+            <li class="list-group-item weeklyHumidity">Humidty</li>
+            <li class="list-group-item weeklyWind">Wind</li>
           </ul>
         </div>
-      </div>  
+      </div>
       <div class="container-fluid custom container col">
         <div class="card customCard text-primary-emphasis bg-primary-subtle border border-primary-subtle">
           <div class="card-body">
-            <img id="currentWeatherIcon">
-            <h3 class="card-title">City Name + Date</h3>
-            <h4 class="card-text">Current Temperature</h4>
+            <img class="weeklyWeatherIcon" src="">
+            <h3 class="card-title weeklyCardTitle">City Name + Date</h3>
+            <h4 class="card-text weeklyCardText">Current Temperature</h4>
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">Feels like</li>
-            <li class="list-group-item">Humidty</li>
-            <li class="list-group-item">Wind</li>
+            <li class="list-group-item weeklyFeel">Feels like</li>
+            <li class="list-group-item weeklyHumidity">Humidty</li>
+            <li class="list-group-item weeklyWind">Wind</li>
           </ul>
         </div>
-      </div>  
+      </div>
       <div class="container-fluid custom container col">
         <div class="card customCard text-primary-emphasis bg-primary-subtle border border-primary-subtle">
           <div class="card-body">
-            <img id="currentWeatherIcon">
-            <h3 class="card-title">City Name + Date</h3>
-            <h4 class="card-text">Current Temperature</h4>
+            <img class="weeklyWeatherIcon" src="">
+            <h3 class="card-title weeklyCardTitle">City Name + Date</h3>
+            <h4 class="card-text weeklyCardText">Current Temperature</h4>
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">Feels like</li>
-            <li class="list-group-item">Humidty</li>
-            <li class="list-group-item">Wind</li>
+            <li class="list-group-item weeklyFeel">Feels like</li>
+            <li class="list-group-item weeklyHumidity">Humidty</li>
+            <li class="list-group-item weeklyWind">Wind</li>
           </ul>
         </div>
+      </div>
       </div>    
       
   </div>
 </div>
+
 <div class="custom-center">
   <h3>Recently Viewed</h3>
+  <div id="cityHistoryDiv">
+
+  </div>
 </div>
 
 <script src="./assets/js/script.js"></script>
