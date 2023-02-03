@@ -7,9 +7,16 @@
 }
 .custom-container {
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     justify-content: center;
     column-gap: 2px;
     align-content: center;
 }
 
+.custom-visible {
+    display: Auto;
+}
+
+.custom-hidden{
+    display: none;
+}

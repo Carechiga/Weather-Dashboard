@@ -333,19 +333,106 @@ crossorigin="anonymous">
           </select>
         <button id="get-weather" type="button" class="btn btn-primary btn-sm">Get Weather!</button>
     </form>
-    <p class="custom-center">- or - </p>
-    <form id="lat-lon" class="input-group container-md">
-        <span class="input-group-text">Latitude and longitude</span>
-        <input id="lat" type="text" aria-label="lat" class="form-control" placeholder="Enter Latitude">
-        <input id="lon" type="text" aria-label="lon" class="form-control" placeholder="Enter longitude">
-        <button id="get-weather-latlon" type="button" class="btn btn-primary btn-sm">Get Weather!</button>        
-    </form>
-</div>
-<div id="currentWeather" class="custom-container row align-items-start">
-  
-</div>
-<div id="weeklyForecast" class="custom-container row align-items-start">
 
+</div>
+<div id="currentVisibility" class="custom-hidden">
+  <div id="currentWeather" class="custom-container row align-items-start">
+    <h2 class=" custom-center">Current Weather</h2>
+    <div class="container-fluid custom container col">
+      <div class="card customCard text-primary-emphasis bg-primary-subtle border border-primary-subtle">
+        <div class="card-body">
+          <img id="currentWeatherIcon" src="">
+          <h3 id="currentCardTitle" class="card-title">City Name + Date</h3>
+          <h4 id="currentCardText" class="card-text">Current Temperature</h4>
+        
+        </div>
+        <ul class="list-group list-group-flush">
+          <li id="currentFeelsLike" class="list-group-item">Feels like</li>
+          <li id="currentHumidity" class="list-group-item">Humidty</li>
+          <li id="currentWind" class="list-group-item">Wind</li>
+        </ul>
+      </div>
+    </div>
+  </div> 
+</div>
+<div id="weeklyVisibility" class="custom-visible">
+  <div id="weeklyForecast" class="custom-container row align-items-start">
+      <h3 class=" custom-center">Weekly Forecast</h3>
+      <div class="container-fluid custom container col">
+        <div class="card customCard text-primary-emphasis bg-primary-subtle border border-primary-subtle">
+          <div class="card-body">
+            <img id="currentWeatherIcon">
+            <h3 class="card-title">City Name + Date</h3>
+            <h4 class="card-text">Current Temperature</h4>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Feels like</li>
+            <li class="list-group-item">Humidty</li>
+            <li class="list-group-item">Wind</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container-fluid custom container col">
+        <div class="card customCard text-primary-emphasis bg-primary-subtle border border-primary-subtle">
+          <div class="card-body">
+            <img id="currentWeatherIcon">
+            <h3 class="card-title">City Name + Date</h3>
+            <h4 class="card-text">Current Temperature</h4>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Feels like</li>
+            <li class="list-group-item">Humidty</li>
+            <li class="list-group-item">Wind</li>
+          </ul>
+        </div>
+      </div>  
+      <div class="container-fluid custom container col">
+        <div class="card customCard text-primary-emphasis bg-primary-subtle border border-primary-subtle">
+          <div class="card-body">
+            <img id="currentWeatherIcon">
+            <h3 class="card-title">City Name + Date</h3>
+            <h4 class="card-text">Current Temperature</h4>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Feels like</li>
+            <li class="list-group-item">Humidty</li>
+            <li class="list-group-item">Wind</li>
+          </ul>
+        </div>
+      </div>  
+      <div class="container-fluid custom container col">
+        <div class="card customCard text-primary-emphasis bg-primary-subtle border border-primary-subtle">
+          <div class="card-body">
+            <img id="currentWeatherIcon">
+            <h3 class="card-title">City Name + Date</h3>
+            <h4 class="card-text">Current Temperature</h4>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Feels like</li>
+            <li class="list-group-item">Humidty</li>
+            <li class="list-group-item">Wind</li>
+          </ul>
+        </div>
+      </div>  
+      <div class="container-fluid custom container col">
+        <div class="card customCard text-primary-emphasis bg-primary-subtle border border-primary-subtle">
+          <div class="card-body">
+            <img id="currentWeatherIcon">
+            <h3 class="card-title">City Name + Date</h3>
+            <h4 class="card-text">Current Temperature</h4>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Feels like</li>
+            <li class="list-group-item">Humidty</li>
+            <li class="list-group-item">Wind</li>
+          </ul>
+        </div>
+      </div>    
+      
+  </div>
+</div>
+<div class="custom-center">
+  <h3>Recently Viewed</h3>
 </div>
 
 <script src="./assets/js/script.js"></script>
