@@ -10,3 +10,4 @@ For this project the intent was to create a funcitonin weather dashboard that di
 The list of country codes for the select element was obtained here: https://www.freeformatter.com/iso-country-list-html-select.html
 
 ## Deployed Application
+https://carechiga.github.io/Weather-Dashboard/
